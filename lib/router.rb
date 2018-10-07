@@ -26,8 +26,8 @@ class Router
         path =~ route.first
       end
     end
-    return Route.new(route_array) if route_array
-    return nil #No route matched
+
+    route_array ? Route.new(route_array) : nil
   end
 
   private
