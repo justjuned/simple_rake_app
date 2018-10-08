@@ -2,6 +2,12 @@
 
 Steps necessary to get the application up and running
 
+
+* Ruby version - **2.3.1**
+
+* System dependencies
+  * **run:** `bundle install` 
+
 * Database creation
   * **Migration:** `rake db:migrate` to setup schema.
   * **Seed:** `rake db:seed` populate the database tables.
@@ -16,5 +22,5 @@ rackup config.ru
 curl -XGET -i http://admin:abc123@localhost:9292/users\?name\=juned
 ```
 
-#### or open in browser:
+#### or open in browser(http basic authentication credentials username: admin, password: abc123):
 [http://admin:abc123@localhost:9292/users\?name\=juned](http://admin:abc123@localhost:9292/users\?name\=juned)
